@@ -1,9 +1,8 @@
 import { Alert } from 'react-bootstrap'
-import React from 'react'
 
-const MyAlert = () => (
-    <Alert variant="success" >
-        No Character Selected
+const MyAlert = (props) => (
+    <Alert variant="success">
+        Selected Character: {props.selectedCharacter}
     </Alert>
 )
 
